@@ -1,32 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>form- I</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <div class="container">
-  <h2>Vertical (basic) form</h2>
+  <h2>Form I</h2>
+<h6>(See rule 5)</h6>
+<h3>
+Form for verification of Character & Antecedents
+of Guard / Supervisor </h3>
   <form action="/action_page.php">
+    <!-- thumb impression tID -->
+    <div class= "row"> 
+    <div class="form-group col-xs-4">
+      <label for="email">Thumb Impression* of the Applicant</label>
+      <input type="text" class="form-control" id="tID" placeholder="Enter thumb Impression" name="tID">
+    </div>
+    <!-- signature sID -->
+    <div class="form-group col-xs-4">
+      <label for="email">Signature of the Applicant </label>
+      <input type="text" class="form-control" id="sID" placeholder="Enter Signature" name="sID">
+    </div>
+    <div class="file-field col-xs-4 md-form">
+      <label for="email">Passport size
+recent photograph
+attested by a
+Class-I Gazetted
+officer </label>
+        <div class="btn btn-primary btn-sm float-left">
+
+            <input type="file">
+        </div>
+    </div>
+  </div>
+    <!-- table for office use only* -->
+
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  <h4>For official use only* </h4>           
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="2">Form number </th>
+        <th>Name of the police station sent for police
+verification </th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" class="form-control" name="form number"/></td>  
+        <td><input type="text" name="form number" class="form-control"/></td> 
+        <td><input type="text" class="form-control" name="police station name"/></td>
+        <td><input type="text" class="form-control" name="date"/></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    <!-- fee amount -->
+    <div class="row">
+    <div class="form-group col-xs-3">
+      <label for="email">Fee Amount Rs</label>
+      <input type="text" class="form-control" id="feeID" placeholder="Enter Fee Amount Rs" name="feeID"> </div>
+      <div class="dropdown form-group col-xs-2">
+        <label for="email">Cash / DD</label>
+ 
+  <select class="form-control" id="sel1">
+    <option>Cash</option>
+    <option>DD</option>
+ 
+  </select>
+        
+  </div>
+  <div class="form-group col-xs-4">
+      <label for="email">DD no.</label>
+      <input type="text" class="form-control" id="ddID" placeholder="Enter DD no." name="ddID"> </div>
+      <div class="form-group col-xs-3">
+      <label for="email">Issue Date</label>
+      <input type="text" class="form-control" id="iDID" placeholder="Enter issue date." name="iDID"> </div>
+    </div>
+    <!-- cash/DD -->
+    
+    <!-- Name of Bank and Branch -->
+    <div class="form-group">
+      <label for="email">Name of Bank and Branch</label>
+      <input type="text" class="form-control" id="nBId" placeholder="Name of Bank and Branch" name="pwd">
+    </div>
+    <p>N.B.: Please read the instructions carefully before filling the form. Please fill in BLOCK
+LETTERS: (CAUTION: Please furnish correct information. Furnishing of incorrect
+information or suppression of any material information in the form will render the candidate
+unsuitable for employment/engagement in private agencies.) </p>
+<br>
+    <!-- name credentials -->
+    <div class="form-group">
+      <h4>Name of applicant (Initials not allowed) </h4>
+      <div class= "row"> 
+    <div class="form-group col-xs-4">
+      <label for="email">First Name</label>
+      <input type="text" class="form-control"  id="fName" placeholder="Enter thumb Impression">
+    </div>
+    <!-- signature sID -->
+    <div class="form-group col-xs-4">
+      <label for="email">Middle Name </label>
+      <input type="text" class="form-control" id="mName" placeholder="Enter Signature">
+    </div>
+    <div class="form-group col-xs-4">
+      <label for="email">Last Name </label>
+      <input type="text" class="form-control" id="lName" placeholder="Enter Signature">
+    </div>
+  </div></div>
+
+  <div class="form-group">
+    <div class="form-group col-xs-12">
+      <label for="email">If you have ever changed your name, please indicate the previous name(s) in full*</label>
+      <input type="text" class="form-control"  id="nisc1" placeholder="...">
+    </div>
+  </div>
+
+   <div class="form-group">
+      <div class= "row"> 
+    <div class="form-group col-xs-2">
+       <label for="email">Male /Female</label>
+ 
+  <select class="form-control" id="sel1">
+    <option>Male</option>
+    <option>Female</option>
+ 
+  </select>
+    </div>
+    <!-- signature sID -->
+    <div class="form-group col-xs-3">
+      <label>Enter Date of Birth as : DD/MM/YY</label>
+      <input type="text" class="form-control" id="dob" placeholder="DD/MM/YY">
+    </div>
+    <div class="form-group col-xs-3">
+      <label>Place of Birth: Village/Town</label>
+      <input type="text" class="form-control" id="pob" placeholder="Place of Birth">
+    </div>
+    <div class="form-group col-xs-2">
+      <label>Distt</label>
+      <input type="text" class="form-control" id="distt" placeholder="Distt">
+    </div>
+    <div class="form-group col-xs-2">
+      <label>State</label>
+      <input type="text" class="form-control" id="state" placeholder="State">
+    </div>
+    
+  </div></div>
+
+  <div class="form-group">
+      <div class= "row"> 
+    <div class="form-group col-xs-6">
+      <label>Father’s full name /Legal Guardian’s Full Name (including surname, if any): </label>
+      <input type="text" class="form-control" id="ffName" placeholder="DD/MM/YY">
+    </div>
+    <div class="form-group col-xs-6">
+      <label>Mother’s full name (including surname, if any):(Initials not allowed) </label>
+      <input type="text" class="form-control" id="mmName" placeholder="Place of Birth">
+    </div>    
+  </div></div>
+
+
+  <div class="form-group">
+      <div class= "row"> 
+    <div class="form-group col-xs-4">
+      <label>If married. Full name of spouse (including surname, if any), ):(Initials not allowed) </label>
+      <input type="text" class="form-control" id="nisc2" placeholder="DD/MM/YY">
+    </div>
+    <div class="form-group col-xs-2">
+      <label>Telephone No./Mobile No </label>
+      <input type="text" class="form-control" id="tno" placeholder="Place of Birth">
+    </div> 
+    <div class="form-group col-xs-2">
+      <label>Office</label>
+      <input type="text" class="form-control" id="office" placeholder="Place of Birth">
+    </div> 
+    <div class="form-group col-xs-2">
+      <label>Residential</label>
+      <input type="text" class="form-control" id="res" placeholder="Place of Birth">
+    </div> 
+    <div class="form-group col-xs-2">
+      <label>Fax</label>
+      <input type="text" class="form-control" id="fax" placeholder="Place of Birth">
+    </div>    
+  </div></div>
+
+
+  <div class="form-group">
+      <div class= "row"> 
+    <div class="form-group col-xs-4">
+      <label>Email </label>
+      <input type="text" class="form-control" id="email" placeholder="DD/MM/YY">
+    </div>
+    <div class="form-group col-xs-8">
+      <label>Address: </label>
+      <input type="text" class="form-control" id="addr" placeholder="Place of Birth">
+    </div>   
+  </div></div>
+
+
+ <div class="form-group">
+<div class="form-group">
+      <label>Please give the date since residing at the above-mentioned address: DD/MM/YY  </label>
+      <input type="text" class="form-control" id="nisc3" placeholder="Place of Birth">
     </div>
     <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      <label>Permanent Address including Street No./Police Station, Village and District ( with PIN code) </label>
+      <input type="text" class="form-control" id="nisc4" placeholder="Place of Birth">
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
+<div class="form-group">
+      <label> In case of stay abroad, particulars of all places where you have resided for more than one year
+after attaining the age of twenty-one years.  </label>
+      <input type="text" class="form-control" id="nisc5" placeholder="Place of Birth">
     </div>
+
+    <div class="form-group">
+  <h4>If you have not resided at the address given at COLOUMN (9) continuously for the last five
+years, please furnish the other address (addresses) with duration(s) resided. You should furnish
+additional photocopies of this form for each additional place of stay during the last five years.
+Forms may be photocopied, but photograph and signature in original are required on each form.  </h4>           
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Address</th>
+        <th>From </th>
+        <th>To</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" class="form-control" name="form number"/></td>  
+        <td><input type="text" name="form number" class="form-control"/></td> 
+        <td><input type="text" class="form-control" name="date"/></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="form-control" name="form number"/></td>  
+        <td><input type="text" name="form number" class="form-control"/></td> 
+        <td><input type="text" class="form-control" name="date"/></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="form-control" name="form number"/></td>  
+        <td><input type="text" name="form number" class="form-control"/></td> 
+        <td><input type="text" class="form-control" name="date"/></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="form-control" name="form number"/></td>  
+        <td><input type="text" name="form number" class="form-control"/></td> 
+        <td><input type="text" class="form-control" name="date"/></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="form-group">
+  <h4> Other Details:</h4>
+      <label>a. Educational Qualifications:  </label>
+      <input type="text" class="form-control" id="eq" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label>b. Previous positions held, if any, along with name and address of employer(s).  </label>
+      <input type="text" class="form-control" id="nisc6" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label>c. Reason for leaving last employment:  </label>
+      <input type="text" class="form-control" id="nisc7" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label>d. Visible Distinguishing Mark:  </label>
+      <input type="text" class="form-control" id="nisc8" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label>e. Have you ever been dismissed / removed from Govt. service on account of
+misconduct or moral turpitude? </label>
+      <input type="text" class="form-control" id="nisc9" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label>Did you earlier operate any Private Security Agency or were its partner, majority
+shareholder, or Director? If yes, then furnish the name, address of the agency and its licence
+particulars. </label>
+      <input type="text" class="form-control" id="nisc10" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label>Are you a citizen of India by: (Birth/ Descent/ Registration/Naturalisation? If you have ever
+possessed any other citizenship, please indicate(the same).  </label>
+      <input type="text" class="form-control" id="nisc11" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label>Have you ever been involved in criminal case in India, if yes whether the case is pending
+investigation/pending trial, resulted in conviction/acquitted/discharge/compounding etc (give
+status/details and add copy of judgement if any). </label>
+      <input type="text" class="form-control" id="nisc12" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label> Have you ever been arrested, deported or involved in any illegal act in any other country
+where you have visited or resided.  </label>
+      <input type="text" class="form-control" id="nisc13" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      <label>Have you been keeping links with any organization or association which is banned under any
+law on account of their activities which pose threat to national security or public order?  </label>
+      <input type="text" class="form-control" id="nisc14" placeholder="Place of Birth">
+    </div>
+    <div class="form-group">
+      
+      <h4>Self – Declaration: </h4>
+      <h4>The information given by me in this form and the enclosures is true & correct and I am solely responsible for its accuracy.</h4>
+      <div class="row">
+<div class="form-group">
+      <div class="file-field col-xs-4 md-form">
+      <label for="email">Thumb Impression* of the Applicant </label>
+        <div class="btn btn-primary btn-sm float-left">
+            <input type="file">
+        </div>
+    </div>
+    <div class="col-xs-4"><label> Date:  </label>
+      <input type="text" class="form-control" id="date" placeholder="Place of Birth"></div>
+      <div class="col-xs-4"><label>Place:  </label>
+      <input type="text" class="form-control" id="place2" placeholder="Place of Birth"></div>
+    </div></div></div>
+
+
+
+    <div class="form-group">
+      <label>Enclosures :  </label>
+      <input type="text" class="form-control" id="enclosures1" placeholder="Place of Birth">
+    </div>
+    <div class="file-field col-xs-12">
+      <label for="email">(Signature/ Thumb Impression *of applicant)
+(*Left Hand Thumb Impression if Male and Right Hand thumb Impression if
+Female)  </label><br>
+        <div class="btn btn-primary btn-sm float-left">
+            <input type="file">
+        </div>
+    </div>
+<div class="checkbox">
+      <label><input type="checkbox" name="remember"> I accept the terms and conditions*</label>
+    </div>
+    <h3><b>FOR OFFICE USE ONLY:</b></h3>
+<div class="form-group">
+      <div class= "row"> 
+    <div class="form-group col-xs-2">
+      <label>File No. </label>
+      <input type="text" class="form-control" id="fileno" placeholder="DD/MM/YY">
+    </div>
+    <div class="form-group col-xs-3">
+      <label>Date of issue of C&A report </label>
+      <input type="text" class="form-control" id="nisc15" placeholder="Place of Birth">
+    </div> 
+    <div class="file-field col-xs-3">
+      <label for="email">(Signature of Police Station In-charge) </label><br>
+        <div class="btn btn-primary btn-sm float-left">
+            <input type="file">
+        </div>
+    </div>
+     <div class="form-group col-xs-2">
+      <label>Name of Police Station </label>
+      <input type="text" class="form-control" id="nisc16" placeholder="Place of Birth">
+    </div>
+    <div class="form-group col-xs-2">
+      <label>Name of Police District</label>
+      <input type="text" class="form-control" id="nisc17" placeholder="Place of Birth">
+    </div>   
+  </div></div>
+  
+  <h4>Note:-</h4>
+<p>
+(i) Three passport-size photographs duly attested by G.O. on reverse of photograph in
+respect of applicants.
+(ii) Proof of Age
+(iii) Certificate of Incorporation issued by ROC, Sale Tax No. (ST-2), Labour Licence,
+Registration under ESI Act & EPF Act
+(iv) Site Plan of office
+(v) Proof of residence of Applicants
+(vi) Prescribed Fees
+(vii) NOC from land-owning agency for carrying on trade of security agency business
+at the premises
+</p>
+
+
+  </div>
+    <!--  -->
+    
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
 </div>
+
+var tID=document.getElementById("tID");
+var sID=document.getElementById("sID");
+var feeID=document.getElementById("feeID");
+var ddID=document.getElementById("ddID");
+var iDID=document.getElementById("iDID");
+var nBId=document.getElementById("nBId");
+var fName=document.getElementById("fName");
+var mName=document.getElementById("mName");
+var lName=document.getElementById("lName");
+
+var nisc1=document.getElementById("nisc1");
+var nisc2=document.getElementById("nisc2");
+var nisc3=document.getElementById("nisc3");
+var nisc4=document.getElementById("nisc4");
+var nisc5=document.getElementById("nisc5");
+var nisc6=document.getElementById("nisc6");
+var nisc7=document.getElementById("nisc7");
+var nisc8=document.getElementById("nisc8");
+var nisc9=document.getElementById("nisc9");
+var nisc10=document.getElementById("nisc10");
+var nisc11=document.getElementById("nisc11");
+var nisc12=document.getElementById("nisc12");
+var nisc13=document.getElementById("nisc13");
+var nisc14=document.getElementById("nisc14");
+var nisc15=document.getElementById("nisc15");
+var nisc16=document.getElementById("nisc16");
+var nisc17=document.getElementById("nisc17");
+
+
+var dob=document.getElementById("dob");
+var pob=document.getElementById("pob");
+var state=document.getElementById("state");
+var distt=document.getElementById("distt");
+var ffName=document.getElementById("ffName");
+var mmName=document.getElementById("mmName");
+var tno=document.getElementById("tno");
+var fax=document.getElementById("fax");
+var res=document.getElementById("res");
+var office=document.getElementById("office");
+var email=document.getElementById("email");
+var addr=document.getElementById("addr");
+var eq=document.getElementById("eq");
+var date=document.getElementById("date");
+var palce2=document.getElementById("place2");
+var enclosures1=document.getElementById("enclosures1");
+var fileno=document.getElementById("fileno");
 
 </body>
 </html>
